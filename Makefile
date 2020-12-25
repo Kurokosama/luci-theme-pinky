@@ -11,6 +11,13 @@ LUCI_DEPENDS:=
 
 PKG_LICENSE:=Apache-2.0
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
+
+
+define Package/luci-theme-pinky/postinst
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] || {
+        ( . /etc/uci-defaults/luci-theme-pinky ) &&        rm -f /etc/uci-defaults/luci-theme-pinky
+}
 
 # call BuildPackage - OpenWrt buildroot signature
