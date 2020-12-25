@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Pinky Theme (default)
+LUCI_TITLE:=Pinky Theme
 LUCI_DEPENDS:=
 
 PKG_LICENSE:=Apache-2.0
