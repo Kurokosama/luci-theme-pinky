@@ -1,4 +1,3 @@
-#!/bin/sh
 uci batch <<-EOF
 	set luci.themes.Pinky=/luci-static/pinky
 	set luci.main.mediaurlbase=/luci-static/pinky
